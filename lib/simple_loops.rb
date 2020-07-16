@@ -8,10 +8,19 @@ def loop_message_five_times (string)
 end
 
 def loop_message_n_times (string, integer)
-  integer.times do
+  count = 0
+  while count < integer do
     puts string
+    count += 1
   end
 end
+
+#could also do:
+#def loop_message_n_times (string, integer)
+  #integer.times do
+    #puts string
+  #end
+#end
 
 def output_array (array)
   counter = 0
